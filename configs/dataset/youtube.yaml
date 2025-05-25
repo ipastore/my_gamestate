@@ -1,0 +1,20 @@
+defaults:
+  - default
+
+_target_: tracklab.wrappers.ExternalVideo
+
+
+# video_path: "https://www.youtube.com/watch?v=jvvbqqM3k6g" 
+
+# video_path: "https://www.youtube.com/watch?v=TNp8_B3zxQ0"  # BOOOOOOCAAAA
+
+# video_path: "https://youtu.be/B_1Ifzf0ayA" #SN-GS021
+
+video_path: "/home/student/headers-tracking/my_gamestate/SNGS-021_video.mp4" #SN-GS021
+
+
+# This didnt change for the tracking pose, try with bbox
+youtube_params:
+  format: "bestvideo[height<=1080]+bestaudio/best[height<=1080]"  # Limit to 1080p
+  socket_timeout: 60  # Increase timeout
+  retries: 3  # Add retries for more reliable downloads

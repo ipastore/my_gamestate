@@ -1,0 +1,5 @@
+data/
+yolov11/
+outputs/
+runs/
+pretrained_models/
